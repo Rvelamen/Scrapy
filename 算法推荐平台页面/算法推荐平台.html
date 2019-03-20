@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>算法推荐平台</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  	<!--引入css-->
+  <!--bootstrap4引用-->
+  <meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css" />
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <!--Vue-->
+  <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+  <!--jquery引入-->
+  <script src="http://api.asilu.com/cdn/jquery.js,jquery.backstretch.min.js" type="text/javascript"></script>
+
+  <link rel="stylesheet" href="index.css" />
+  <style>
+   
+    </style>
+</head>
+
+<body>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+  <div class="container1">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="col-md-1">
+        <!-- Brand/logo -->
+        <a class="navbar-brand inline-block" href="#">
+          <img src="http://static.runoob.com/images/mix/bird.jpg" alt="logo" style="width:40px;" />
+        </a>
+      </div>
+      <!-- Links -->
+      <div class="col-md-3">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link" href="算法推荐平台.html">首页</a>
+          </li>
+          <li class="nav-item inline-block">
+            <a class="nav-link" href="#">Link 2</a>
+          </li>
+
+          <!-- Dropdown -->
+          <li class="nav-item dropdown inline-block">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Dropdown link
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-3">
+        <form class="form-inline ">
+          <input class="form-control search_input" type="text" placeholder="Search" />
+          <button class="btn btn-success search_button" type="button" style="margin-top:2px;">
+            Search
+          </button>
+        </form>
+      </div>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav" id="headerNav">
+          <li class="nav-item" id="navPhotoPage">
+            <a class="nav-link" href="/photo" data-toggle="modal" data-target="#myModal"> 登录 </a>
+
+            <!-- 模态框 -->
+            <div class="modal fade" id="myModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- 模态框头部 -->
+                  <div class="modal-header">
+                    <h4 class="modal-title login_words">用户登录</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+
+                  <!-- 模态框主体 -->
+                  <div class="modal-body">
+                    <form class="login_form">
+                      <div class="form-group">
+                        <label class="login_words" for="usr">用户名:</label>
+                        <input type="text" class="form-control" id="usr">
+                      </div>
+                      <div class="form-group">
+                        <label class="login_words" for="pwd">密码:</label>
+                        <input type="password" class="form-control" id="pwd">
+                      </div>
+                      <hr />
+                      <div class="login_button_div text-right">
+                        <input class="btn" type="submit" value="登录" name="">
+                        <input class="btn" type="reset" value="重置" name="">
+                        <button type="button" class="btn" data-dismiss="modal">Cancel</button>
+                      </div>
+                    </form>
+
+                  </div>
+
+                  <!-- 模态框底部 -->
+                  <div class="modal-footer">
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item" id="navEssayPage">
+            <a class="nav-link" href="/essay"> 注销 </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-2">
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Dropdown link
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="personal_center.html">个人中心</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <div class="row">
+      <div class="part col-md-7 offset-md-1">
+        <div class="left_part ">
+          <center>
+            <div id="demo" class="carousel slide demo1" data-ride="carousel">
+              <!-- 指示符 -->
+              <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+              </ul>
+
+              <!-- 轮播图片 -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <p class="title1">Coding Ability Test is COMING！</p>
+                  <p class="title2">Have fun coding with your friends!</p>
+                  <button class="btn btn-info">Have a try!</button>
+                </div>
+                <div class="carousel-item">
+                  <p class="title1">Coding Ability Test is COMING！</p>
+                  <p class="title2">Have fun coding with your friends!</p>
+                  <button class="btn btn-info">Have a try!</button>
+                </div>
+                <div class="carousel-item">
+                  <p class="title1">Coding Ability Test is COMING！</p>
+                  <p class="title2">Have fun coding with your friends!</p>
+                  <button class="btn btn-info">Have a try!</button>
+                </div>
+              </div>
+
+              <!-- 左右切换按钮 -->
+              <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
+
+            <div class="message_content list-group show_div ">
+              <div class="list-group-item list-group-item-action" style="height:40%;">
+                <div class="text-left">
+                  <a href="job2.html">
+                    <img class="img2" src="http://img.mp.itc.cn/upload/20170211/e4c5828ba1ce4d07be9c1d99d74c12b1_th.jpeg"
+                      alt="" />
+                    <span>Loli家的小灰狼</span>
+                  </a>
+                </div>
+              </div>
+              <div class="list-group-item list-group-item-action" style="height:60%;text-align:left;">
+                <p class="p_message">创建了有关 Trailing Zeros 的讨论：乘除法耗时。</p>
+                <p class="p_message">
+                  写了3种方案，到第3种才满足时间需求，注意小数的乘除法比大数乘除法快，大概就知道怎么去缩短耗时le
+                </p>
+                <p class="p_message">评论 <span>0</span> 点赞 <span>0</span> &nbsp;&nbsp;&nbsp;&nbsp; <span>4个月前</span></p>
+              </div>
+            </div>
+            <div class="message_content list-group show_div ">
+              <div class="list-group-item list-group-item-action" style="height:40%;">
+                <div class="text-left">
+
+                  <img class="img2" src="http://img.mp.itc.cn/upload/20170211/e4c5828ba1ce4d07be9c1d99d74c12b1_th.jpeg"
+                    alt="" />
+                  <span>Loli家的小灰狼</span>
+
+                </div>
+              </div>
+              <div class="list-group-item list-group-item-action" style="height:60%;text-align:left;">
+                <p class="p_message">创建了有关 Trailing Zeros 的讨论：乘除法耗时。</p>
+                <p class="p_message">
+                  写了3种方案，到第3种才满足时间需求，注意小数的乘除法比大数乘除法快，大概就知道怎么去缩短耗时le
+                </p>
+                <p class="p_message">评论 <span>0</span> 点赞 <span>0</span> &nbsp;&nbsp;&nbsp;&nbsp; <span>4个月前</span></p>
+              </div>
+            </div>
+            <div class="message_content list-group show_div ">
+              <div class="list-group-item list-group-item-action" style="height:40%;">
+                <div class="text-left">
+                  <img class="img2" src="http://img.mp.itc.cn/upload/20170211/e4c5828ba1ce4d07be9c1d99d74c12b1_th.jpeg"
+                    alt="" />
+                  <span>Loli家的小灰狼</span>
+                </div>
+              </div>
+              <div class="list-group-item list-group-item-action" style="height:60%;text-align:left;">
+                <p class="p_message">创建了有关 Trailing Zeros 的讨论：乘除法耗时。</p>
+                <p class="p_message">
+                  写了3种方案，到第3种才满足时间需求，注意小数的乘除法比大数乘除法快，大概就知道怎么去缩短耗时le
+                </p>
+                <p class="p_message">评论 <span>0</span> 点赞 <span>0</span> &nbsp;&nbsp;&nbsp;&nbsp; <span>4个月前</span></p>
+              </div>
+            </div>
+            <div class="message_content list-group show_div ">
+              <div class="list-group-item list-group-item-action" style="height:40%;">
+                <div class="text-left">
+                  <img class="img2" src="http://img.mp.itc.cn/upload/20170211/e4c5828ba1ce4d07be9c1d99d74c12b1_th.jpeg"
+                    alt="" />
+                  <span>Loli家的小灰狼</span>
+                </div>
+              </div>
+              <div class="list-group-item list-group-item-action" style="height:60%;text-align:left;">
+                <p class="p_message">创建了有关 Trailing Zeros 的讨论：乘除法耗时。</p>
+                <p class="p_message">
+                  写了3种方案，到第3种才满足时间需求，注意小数的乘除法比大数乘除法快，大概就知道怎么去缩短耗时le
+                </p>
+                <p class="p_message">评论 <span>0</span> 点赞 <span>0</span> &nbsp;&nbsp;&nbsp;&nbsp; <span>4个月前</span></p>
+              </div>
+            </div>
+            <div class="message_content list-group show_div ">
+              <div class="list-group-item list-group-item-action" style="height:40%;">
+                <div class="text-left">
+                  <img class="img2" src="http://img.mp.itc.cn/upload/20170211/e4c5828ba1ce4d07be9c1d99d74c12b1_th.jpeg"
+                    alt="" />
+                  <span>Loli家的小灰狼</span>
+                </div>
+              </div>
+              <div class="list-group-item list-group-item-action" style="height:60%;text-align:left;">
+                <p class="p_message">创建了有关 Trailing Zeros 的讨论：乘除法耗时。</p>
+                <p class="p_message">
+                  写了3种方案，到第3种才满足时间需求，注意小数的乘除法比大数乘除法快，大概就知道怎么去缩短耗时le
+                </p>
+                <p class="p_message">评论 <span>0</span> 点赞 <span>0</span> &nbsp;&nbsp;&nbsp;&nbsp; <span>4个月前</span></p>
+              </div>
+            </div>
+            <div class="message_content list-group show_div ">
+              <div class="list-group-item list-group-item-action" style="height:40%;">
+                <div class="text-left">
+                  <img class="img2" src="http://img.mp.itc.cn/upload/20170211/e4c5828ba1ce4d07be9c1d99d74c12b1_th.jpeg"
+                    alt="" />
+                  <span>Loli家的小灰狼</span>
+                </div>
+              </div>
+              <div class="list-group-item list-group-item-action" style="height:60%;text-align:left;">
+                <p class="p_message">创建了有关 Trailing Zeros 的讨论：乘除法耗时。</p>
+                <p class="p_message">
+                  写了3种方案，到第3种才满足时间需求，注意小数的乘除法比大数乘除法快，大概就知道怎么去缩短耗时le
+                </p>
+                <p class="p_message">评论 <span>0</span> 点赞 <span>0</span> &nbsp;&nbsp;&nbsp;&nbsp; <span>4个月前</span></p>
+              </div>
+            </div>
+
+          </center>
+        </div>
+      </div>
+      <div class="part col-md-3 text-center">
+        <div class="right_part text-center">
+          <center>
+            <div class="img_div">
+              <a href=""><img class="img" src="http://img.mp.itc.cn/upload/20170211/e4c5828ba1ce4d07be9c1d99d74c12b1_th.jpeg"
+                  alt="" /></a>
+            </div>
+          </center>
+          <div class="message"><span class="username words">昵称</span></div>
+          <div class="message">
+            <span class="words">签名: 小朋朋天下第一</span>
+          </div>
+          <div class="message"><span class="text-info" style="font-size:20px;">43/1211</span></div>
+          <div class="message"><span class="text-info">算法问题</span></div>
+          <div class="message"><span class="text-info">已通过3%</span></div>
+        </div>
+        <div class="right_part2 text-center">
+          <div>
+            <button class="btn btn-info btn-block btn-1">点击我</button>
+          </div>
+          <div>
+            <button class="btn-success btn-block btn-2">比赛</button>
+            <button class="btn-success btn-block btn-2">比赛</button>
+            <button class="btn-success btn-block btn-2">比赛</button>
+            <button class="btn-success btn-block btn-2">比赛</button>
+          </div>
+          <button class="btn btn-info btn-block btn-1">点击我</button>
+          <button class="btn btn-info btn-block btn-1">点击我</button>
+
+          <div class="list-group show_div">
+            <a href="#" class="list-group-item list-group-item-action">公告列表</a>
+            <a href="#" class="list-group-item list-group-item-action">First item</a>
+            <a href="#" class="list-group-item list-group-item-action">Second item</a>
+            <a href="#" class="list-group-item list-group-item-action">Third item</a>
+            <a href="#" class="list-group-item list-group-item-action">First item</a>
+          </div>
+          <div class="list-group show_div">
+            <a href="#" class="list-group-item list-group-item-action">公告列表</a>
+            <a href="#" class="list-group-item list-group-item-action">First item</a>
+            <a href="#" class="list-group-item list-group-item-action">Second item</a>
+            <a href="#" class="list-group-item list-group-item-action">Third item</a>
+            <a href="#" class="list-group-item list-group-item-action">First item</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="" async defer></script>
+</body>
+
+</html>

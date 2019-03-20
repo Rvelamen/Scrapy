@@ -1,0 +1,314 @@
+@charset utf-8;
+
+body {
+  background-color: rgba(0, 0, 0, 0.16);
+}
+
+.container1 {}
+
+.nav {
+  height: 50px;
+  background: rgba(2, 2, 3, 0.795);
+}
+
+.part {
+  /* border: 1px solid red; */
+  padding-top: 10px;
+}
+
+.right_part {
+  background: white;
+  height: 300px;
+  padding-top: 30px;
+}
+
+.right_part2 {
+  background: white;
+  height: 280px;
+  margin-top: 10px;
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+
+.words {
+  color: #aaa;
+  font-size: 18px;
+}
+
+.img_div {
+  width: 100px;
+  height: 100px;
+  /* border: 1px solid red; */
+}
+
+.btn-1 {
+  height: 80px;
+}
+
+.btn-2 {
+  width: 24%;
+  height: 80px;
+  margin-top: 10px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.search_input {
+  margin-left: 8px;
+}
+
+.search_button {
+  margin-left: 8px;
+}
+
+.carousel-item {
+  width: 90%;
+  height: 200px;
+  background: white;
+  padding-top: 20px;
+}
+
+.message_content {
+  width: 90%;
+  min-height: 150px;
+  /* border: 1px solid red; */
+  background: white;
+  margin-top: 20px;
+}
+
+.show_div {
+  margin-top: 17px;
+}
+
+.title1 {
+  font-size: 23px;
+}
+
+.title2 {
+  font-size: 16px;
+  color: #bbb;
+}
+
+.message {
+  margin-top: 5px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.img2 {
+  width: 40px;
+  height: 40px;
+}
+
+.p_message {
+  font-size: 13px;
+  /* border:1px solid red;  */
+  margin-bottom: 5px;
+}
+
+/*hearder-start*/
+.nav-div {
+  border-top: 1px solid #aaa;
+  padding-top: 7px;
+  height: 47px;
+}
+
+.nav_icon_div {
+  padding-top: 5px;
+}
+
+.nav_a {
+  display: block;
+  margin-top: 3px;
+  font-size: 17px;
+}
+
+.nav_login {
+  color: #bbb;
+}
+
+.nav_a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.open_page {
+  color: white;
+}
+
+.icon_img {
+  width: 35px;
+  height: 37px;
+  vertical-align: -12px;
+  display: inline-block;
+}
+
+.header {
+  background: #373a3c;
+  text-align: center;
+  color: #ddd;
+}
+
+.display-none {
+  display: none;
+}
+
+.login_words {
+  color: black;
+}
+
+.login_form {
+  text-align: left;
+}
+
+.login_button_div {
+  text-align: right;
+}
+
+.code_textarea {
+  height: 200px;
+}
+
+.submit_title {
+  margin-left: 30px;
+}
+
+/*hearder-end*/
+
+.big_title {
+  font-size: 80px;
+  margin-top: 20px;
+}
+
+.music_button {}
+
+.a-link {
+  min-width: 100px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.a_link_div {}
+
+.link_start {
+  /*原是为了前调第一列按钮对齐，现在a-link中设置*/
+}
+
+.body {
+  color: white;
+}
+
+.div-height {
+  height: 15px;
+}
+
+.direction {
+  font-size: 18px;
+}
+
+/*problemList*/
+.input_search {
+  margin-left: 15px;
+}
+
+.search_div {
+  margin-top: 40px;
+}
+
+.problem_div {
+  margin-top: 40px;
+}
+
+.body_problem {
+  background: #818a91;
+}
+
+.page_input {
+  width: 52px;
+  margin: 0 8px;
+}
+
+/*problemList*/
+
+/*job.html*/
+.control_div {
+  margin-top: 20px;
+  padding-top: 20px;
+  border: 1px solid red;
+  height: 350px;
+}
+
+.problem_container {
+  height: 650px;
+  margin-top: 20px;
+  border: 1px solid red;
+  background: #ddd;
+}
+
+.button1 {
+  width: 100px;
+  margin: 10px 0;
+  margin-right: 5px;
+}
+
+.problem_messages {
+  height: 100px;
+  max-width: 100%;
+  border: 1px solid red;
+}
+
+.comment_input {
+  width: 100%;
+  ;
+  height: 100px;
+
+}
+
+.comment_div {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.comment_submit {
+  margin-top: 10px;
+}
+
+.code_div {
+  color: white;
+}
+
+.pre-scrollable {
+  max-height: 340px;
+  overflow-y: scroll;
+}
+
+.shared_checkbox {
+  margin-left: 5px;
+}
+
+.code_pre {
+  background: black;
+  color: white;
+  padding-left: 30px;
+  padding-top: 15px;
+}
+
+.row1 {
+  margin-bottom: 10px;
+}
+
+/*job.html*/
+
+/*footer*/
+.footer_footer {
+  margin: 20px 0;
+  text-align: center;
+}
+
+/*footer*/
