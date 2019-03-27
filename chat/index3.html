@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flask-SocketIO Test</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.bootcss.com/socket.io/1.5.1/socket.io.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery.serializeJSON/2.9.0/jquery.serializejson.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var roominfo,usernameinfo
+            var socket = io.connect();
+            var num = 0;
+
+            socket.on('connect', function () {
+                socket.emit('connect_event', {data: 'connected!'});
+            });
+
+            $("#join").click(function (event) {
+                var username = encodeURI($("#name_data").val());
+                var room = encodeURI($('#join_data').val());
+                socket.emit('join', {room: room, username: username});
+                roominfo = $("#join_data").val()
+                usernameinfo = $("#name_data").val()
+                $('#RoomNumber').text('This Room Number is ' + $('#join_data').val() + ' !')
+                $('#join_data').val('');
+                $('#join_data').attr("disabled", true);
+                $('#name_data').val('');
+                $('#name_data').attr("disabled", true);
+                return false;
+            });
+
+            $("#send").click(function (event) {
+                var message = encodeURI($('#send_data').val())
+                socket.send({data: message});
+                $('#send_data').val('')
+                return false;
+            });
+
+
+            socket.on('message', function (msg) {
+                console.log(msg.data1)
+                $('#log').append('<br>' + $('<div/>').text(msg.name1 + '   #  :   ' + msg.data1).html());
+            });
+
+
+            socket.on('server_response', function (msg) {
+                $('#log').append('<br>' + $('<div/>').text('Received #' + ': ' + msg.data).html());
+                if(num!=0){
+                    reconnect();
+                }else {
+                    $('#join_data').val(roominfo);
+                    $('#join_data').attr("disabled", false);
+                    $('#name_data').val(usernameinfo);
+                    $('#name_data').attr("disabled", false);
+                    $('#tips').text('请重新登录！！！')
+                }
+            });
+
+            function reconnect(){
+                num += 1;
+                var username = encodeURI($("#name_data").val());
+                var room = encodeURI($('#join_data').val());
+                socket.emit('join', {room: room, username: username});
+                roominfo = $("#join_data").val()
+                usernameinfo = $("#name_data").val()
+                $('#RoomNumber').text('This Room Number is ' + $('#join_data').val() + ' !')
+                $('#join_data').val('');
+                $('#join_data').attr("disabled", true);
+                $('#name_data').val('');
+                $('#name_data').attr("disabled", true);
+            }
+
+        });
+    </script>
+</head>
+<body>
+<h2>WebSokect</h2>
+<h3 id="RoomNumber"></h3>
+
+
+<div class="alert alert-success alert-dismissable" id="tip">
+	<button type="button" class="close" data-dismiss="alert"
+			aria-hidden="true">
+		&times;
+	</button>
+	<span id="tips"></span>
+</div>
+
+<br>
+<div id='log'></div>
+<br>
+<input type="text" name="join_data" class="input" id="name_data" placeholder="Your name">
+</hr>
+<input type="text" name="join_data" class="input" id="join_data" placeholder="Room Number">
+<button id="join" class="btn btn-success">Join</button>
+<br>
+<textarea rows="5" cols="48" class="controls" name="send_data" id="send_data" placeholder="Send Message"></textarea>
+<button id="send" class="btn btn-success">Send</button>
+</hr>
+<br>
+
+</body>
+</html>
